@@ -3,14 +3,14 @@
 # MEZZANINE SETTINGS #
 ######################
 
-# The following Mezzanine settings are already defined in 
-# mezzanine.conf.defaults, but can be uncommented below in 
+# The following Mezzanine settings are already defined in
+# mezzanine.conf.defaults, but can be uncommented below in
 # order to override their defaults.
 
 # Name of the current theme to host during theme development.
 # THEME = ""
 
-# Controls the ordering and grouping of the admin menu. 
+# Controls the ordering and grouping of the admin menu.
 # ADMIN_MENU_ORDER = (
 #     (_("Content"), ("pages.Page", "blog.BlogPost", "blog.Comment",
 #         (_("Media Library"), "fb_browse"),)),
@@ -18,7 +18,7 @@
 #     (_("Users"), ("auth.User", "auth.Group",)),
 # )
 
-# A three item sequence, each containing a sequence of template tags 
+# A three item sequence, each containing a sequence of template tags
 # used to render the admin dashboard.
 # DASHBOARD_TAGS = (
 #     ("blog_tags.quick_blog", "mezzanine_tags.app_list"),
@@ -51,8 +51,8 @@ TIME_ZONE = ""
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = "en"
 
-# A boolean that turns on/off debug mode. When set to ``True``, stack traces 
-# are displayed for error pages. Should always be set to ``False`` in 
+# A boolean that turns on/off debug mode. When set to ``True``, stack traces
+# are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
 DEBUG = False
 
@@ -114,8 +114,8 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # Name of the directory for the project.
 PROJECT_DIRNAME = PROJECT_ROOT.split(os.sep)[-1]
 
-# Every cache key will get prefixed with this value - here we set it to 
-# the name of the directory the project is in to try and use something 
+# Every cache key will get prefixed with this value - here we set it to
+# the name of the directory the project is in to try and use something
 # project specific.
 CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_DIRNAME
 
@@ -214,8 +214,8 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 # LOCAL SETTINGS #
 ##################
 
-# Allow any settings to be defined in local_settings.py which should be 
-# ignored in your version control system allowing for settings to be 
+# Allow any settings to be defined in local_settings.py which should be
+# ignored in your version control system allowing for settings to be
 # defined per machine.
 try:
     from local_settings import *
@@ -227,8 +227,8 @@ except ImportError:
 # DYNAMIC SETTINGS #
 ####################
 
-# set_dynamic_settings() will rewrite globals based on what has been 
-# defined so far, in order to provide some better defaults where 
+# set_dynamic_settings() will rewrite globals based on what has been
+# defined so far, in order to provide some better defaults where
 # applicable.
 from mezzanine.utils.conf import set_dynamic_settings
 set_dynamic_settings(globals())
